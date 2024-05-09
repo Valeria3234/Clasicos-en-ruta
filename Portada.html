@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clásicos en Ruta - Portada</title>
+  
+    <link rel="stylesheet" href="estilos_portada.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/736x/41/84/2d/41842d6c7eda74ffc09d1ef1b40d1806.jpg" alt="Logo de Clásicos en Ruta">
+        <h1>Clásicos en Ruta</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="comentarios.html">Comentarios</a>
+        </nav>
+            <a href="https://www.instagram.com/clasicos_en_ruta?igsh=c2h4Ymhoc2lzMGd3&utm_source=qr" class="instagram-link">Instagram</a>
+    </header>
+    <div class="single-item">
+        <div><img src="https://i.pinimg.com/564x/26/e0/35/26e035096340fdda051d616eb0d8994d.jpg" alt="Descripción de la imagen 2" style="width: 150%; height: auto; display: block; margin: 0 auto;"></div>
+        <div><img src="https://i.pinimg.com/564x/08/72/c2/0872c21bb93c391d2d704a11fa8d2d80.jpg" alt="Descripción de la imagen 2" style="width: 150%; height: auto; display: block; margin: 0 auto;"></div>
+        <div><img src="https://i.pinimg.com/564x/da/2f/bb/da2fbbae684ce34e8c3ad825f17601bb.jpg" alt="Descripción de la imagen 2" style="width: 150%; height: auto; display: block; margin: 0 auto;"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $('.single-item').slick({
+                dots: true, 
+                arrows: true, 
+                infinite: true, 
+                speed: 500, 
+                slidesToShow: 1, 
+                slidesToScroll: 1 
+            });
+        });
+    </script>
+</body>
+</html>

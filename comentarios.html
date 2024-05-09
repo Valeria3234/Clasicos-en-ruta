@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - Clásicos en Ruta</title>
+    
+    <link rel="stylesheet" href="estilos_comentarios.css">
+</head>
+<body>
+    <header>
+       
+        <img src="https://i.pinimg.com/736x/41/84/2d/41842d6c7eda74ffc09d1ef1b40d1806.jpg" alt="Logo de Clásicos en Ruta">
+        
+        <h1>Clásicos en Ruta</h1>
+       
+        <nav>
+            <ul>
+                <li><a href="Portada.html">Portada</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+            <section id="comentarios">
+                <h2>¡Deja tu comentario!</h2>
+                <p>¿Has tenido la suerte de ver uno de estos impresionantes clásicos en persona? ¿O tal vez tienes un favorito que no mencionamos?, Comparte tus historias y opiniones con nosotros dejando un comentario abajo ¡Nos encantaría saber qué piensas!</p>
+                <form action="procesar_comentario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <input type="submit" value="Enviar comentario">
+                </form>
+            </section>
+    </main>
+    
+
+</body>
+</html>
